@@ -78,7 +78,7 @@ selectSnd xs = [snd x | x<-xs]
 
 -- 15 - Usando a função zip com list comprehension e outras funções auxiliares, escreva uma função dotProd :: [Int] -> [Int] -> Int que calcule o somatório dos produtos dos pares de elementos de duas listas
 
---dotProd :: [Int] -> [Int] -> Int
---dotProd x = sum 
+dotProd :: [Int] -> [Int] -> Int
+dotProd xs xss = sum [ fst x * snd x | x<-zip xs xss]
 
 
